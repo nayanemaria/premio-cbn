@@ -1,0 +1,565 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ================================== FONTES INSTITUCIONAIS ==================================== */
+
+@font-face {
+  font-family: 'Merciheartbrush';
+  src: url('../fonts/merciheartbrush/merciheartbrush.eot');
+  src: url('../fonts/merciheartbrush/merciheartbrush.eot?#iefix') format('embedded-opentype'), url('../fonts/merciheartbrush/merciheartbrush.woff') format('woff'), url('../fonts/merciheartbrush/merciheartbrush.ttf') format('truetype'), url('../fonts/merciheartbrush/merciheartbrush.svgz#merciheartbrush') format('svg'), url('../fonts/merciheartbrush/merciheartbrush.svg#merciheartbrush') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  src: url('../fonts/DINNextLTPro/DINNextLTPro.eot');
+  src: url('../fonts/DINNextLTPro/DINNextLTPro.eot?#iefix') format('embedded-opentype'), url('../fonts/DINNextLTPro/DINNextLTPro.woff') format('woff'), url('../fonts/DINNextLTPro/DINNextLTPro.ttf') format('truetype'), url('../fonts/DINNextLTPro/DINNextLTPro.svgz#DINNextLTPro') format('svg'), url('../fonts/DINNextLTPro/DINNextLTPro.svg#DINNextLTPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINNextLTPro-Light';
+  src: url('../fonts/DINNextLTPro-Light/DINNextLTPro-Light.eot');
+  src: url('../fonts/DINNextLTPro-Light/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/DINNextLTPro-Light/DINNextLTPro-Light.woff') format('woff'), url('../fonts/DINNextLTPro-Light/DINNextLTPro-Light.ttf') format('truetype'), url('../fonts/DINNextLTPro-Light/DINNextLTPro-Light.svgz#DINNextLTPro-Light') format('svg'), url('../fonts/DINNextLTPro-Light/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswald-regular';
+  src: url('../css/fonts/oswald-regular.eot');
+  src: url('../css/fonts/oswald-regular.eot?#iefix') format('embedded-opentype'), url('../css/fonts/oswald-regular.woff') format('woff'), url('../css/fonts/oswald-regular.ttf') format('truetype'), url('../css/fonts/oswald-regular.svgz#oswald-regular') format('svg'), url('../css/fonts/oswald-regular.svg#oswald-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+section[class^="container"] {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.metade {
+  width: 49%;
+}
+
+/*css do header*/
+
+.topo-menu{
+  background-image: url("../img/bg-topo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+
+.content-logo {
+  position: absolute;
+  background-image: url(../img/fundo.png), url(../img/fundo1.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center 95%, center 100%;
+  background-size: 40%, 38%;
+  text-align: center;
+  height: 550px;
+  bottom: 250px;
+  background-blend-mode: color;
+}
+
+.forminscricoes label, .forminscricoes span{
+  color: #616161;
+  font-family: 'DINNextLTPro-Light';
+}
+
+.forminscricoes p{
+  color: #30B3FC;
+}
+
+.forminscricoes input:not([type=file]):not([type=checkbox]) {
+  width: 100%;
+  height: 35px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #3B3B3B;
+  border-radius: 8px;
+}
+
+
+
+/*confgurações gerais dos textos, títulos e botões*/
+p,span,h1,h2,h3,h4,h5,a,label,li,button{
+  font-family: 'DINNextLTPro'; 
+}
+
+.titulo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo h1 {
+  font-family: 'Merciheartbrush';
+  color: #B12A31;
+  font-size: 80px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.titulo-branco h1{
+  color: white;
+}
+
+.especifico h1{
+  max-width: 290px;
+  margin-top: 0;
+  line-height: 90px;
+  text-align-last: end;
+}
+
+.textopremio{
+  color: #3B3B3B;
+  font-family: 'DINNextLTPro-Light';
+}
+
+.textopremiacao p{
+  color: white;
+  font-family: 'DINNextLTPro-Light';
+}
+
+.img-juri{
+  height: 100%;
+  float: left;
+  margin: 0;
+  max-width: 120px;
+}
+
+.img-juri img{
+  width: 100%;
+}
+
+.juri h3 {
+  font-size: 30px;
+  margin: 0;
+  color: #B12A31;
+}
+
+.juri p{
+  margin-top: 10px;
+  font-family: 'DINNextLTPro-Light';
+}
+
+.content-inscricoes::after{
+  content: "";
+  display: inline-block;
+  width: 30%;
+  border: 0.5px solid #000;
+}
+.content::after{
+  content: "";
+  display: inline-block;
+  width: 30%;
+}
+
+.bt-edital {
+  font-family: 'DINNextLTPro-Light';
+}
+
+.bt-edital, .bt-edital a {
+  color: #30B3FC;
+}
+
+.bt-edital a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.button {
+  width: 300px;
+  height: 50px;
+  background: #30B3FC 0% 0% no-repeat padding-box;
+  border-radius: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+  border: 0;
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+/* css do menu */
+.navbar {
+ min-height: 60px;
+ overflow: hidden;
+ background-color: #B12A31;
+ position: fixed; /* Set the navbar to fixed position */
+ top: 0; /* Position the navbar at the top of the page */
+ width: 100%; /* Full width */
+ left: 0;
+ height: 50px;
+ z-index: 2;
+}
+
+/* Links inside the navbar */
+.navbar li {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar li a{
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.navbar h1 {
+  margin:0;
+}
+
+.navbar h1 a {
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+.list-full, .list-full li,
+.list-auto, .list-auto li { width: 100%; float: left; display: block; position: relative; }
+.list-auto, .list-auto li { width: auto; }
+
+.float-l { float: left; }
+.float-r { float: right; }
+
+input#control-nav {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+input[id*="modal_"] {
+  position: fixed;
+  left: -9999px;
+  top: 50%;
+  opacity: 0;
+}
+input[id*="modal_"]:checked + .navbar.modal {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+input[id*="modal_"]:checked + .navbar.modal .modal-content {
+  opacity: 1;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.footer{
+  background: #B12A31;
+  width: 100%;
+  height: 60px;
+  color: white;
+}
+
+.footer span{
+  font-family: 'DINNextLTPro-Light';
+  border-left: 1px solid;
+}
+/*calendario*/
+
+.listacalendario{
+  padding: 0;
+}
+
+.listacalendario h3, .listacalendario p{
+  font-family: 'DINNextLTPro-Light';
+  margin-top: -1px;
+}
+
+.listacalendario ul {
+  list-style: none;
+}
+
+.listacalendario li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  color: white;
+  max-width: 80%;
+  padding-bottom: 20px;
+}
+
+.listacalendario li:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+.listacalendario li:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 7px;
+}
+}
+.listacalendario li:last-child:after {
+  height: 50%;
+}
+
+.caixa-cinza{
+  background-color: #3B3B3B;
+}
+.caixa-vermelha{
+  float: right;
+  background-color: #B12A31;
+  border-bottom-left-radius: 111px;
+  border-top-left-radius: 111px;
+  width: 70%; /*media query*/
+  padding-left: 80px;
+  margin-top: -40px;
+  padding-bottom: 50px;
+  height: 109%;
+}
+
+.caixa-vermelha .titulo-branco{
+  justify-content: flex-start;
+}
+.caixa-vermelha h1 {
+  margin: 30px 0;
+}
+
+section.calendario {
+  margin-bottom: 60px;
+}
+
+.listacalendario {
+  max-height: 610px;
+  overflow: hidden;
+  overflow-y: auto;
+  max-width: 95%;
+}
+
+.listacalendario::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #b12a31;
+}
+
+.listacalendario::-webkit-scrollbar {
+  width: 10px;
+  background-color: #b12a31;
+}
+
+.listacalendario::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #b12a31;
+}
+  
+
+/*formulario*/
+
+.imageminscricao{
+  background-color: #EEEEEE;
+  background-image: url('../img/inscricao.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -70px 30px;
+}
+
+.checkbox input {
+  height: 20px;
+  margin: 0;
+}
+
+.listacalendario h3 {
+  margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 1198px) {
+  .caixa-vermelha{
+    width: 95%;
+    padding-left: 10px;
+  }
+  .caixa-vermelha .titulo-branco{
+    justify-content: flex-start;
+  }
+  .caixa-vermelha h1 {
+    margin: 30px 0;
+  }
+}
+
+
+/*css menu mobile*/
+
+@media screen and (max-width: 992px) {
+  .especifico h1 {
+    margin-bottom: 40px; 
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    border-left: 1px solid #ccc;
+    background-color: #B12A31;
+    overflow-x: auto;
+    z-index: 2;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+
+  .navbar ul.list-auto {
+    padding: 0;
+  }
+
+  .navbar ul.list-auto li {
+    width: 100%;
+    border: solid #ccc;
+    border-width: 0 0 1px;
+  }
+
+  .navbar li a {
+    padding: 10px 10px;
+  }
+
+  .control-nav { /* label icon */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+    border: solid #fff;
+    border-width: 3px 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .control-nav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #fff;
+  }
+
+  .control-nav-close {
+    position: fixed; /* label layer */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+
+
+  input#control-nav:checked ~ nav,
+  input#control-nav:checked ~ .control-nav-close {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .metade {
+    width: 100%;
+  }
+  .imageminscricao{
+    background-image: none;
+  }
+  .titulo h1 {
+    font-size: 50px;
+  }
+  .button {
+    width: 195px;
+    height: 35px;
+    font-size: 20px;
+  }
+  .logo-topo{
+    width: 277px;
+  }
+
+  .topo-menu h1{
+    font-size: 22px;
+  }
+
+  .content-logo{
+    background-size: 80%, 80%;
+    bottom: 210px;
+  }
+
+  .img-juri{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 120px;
+  }
+
+  .juri h3, .juri p {
+    text-align: center;
+  }
+
+  section[class^="container"] {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .imageminscricao .especifico h1 {
+    max-width: 180px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
